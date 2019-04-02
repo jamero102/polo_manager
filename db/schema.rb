@@ -77,6 +77,10 @@ ActiveRecord::Schema.define(version: 2019_04_02_230226) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "name"
+    t.integer "outdoor_handicap", default: 0
+    t.integer "arena_handicap", default: 0
+    t.boolean "membership_active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
